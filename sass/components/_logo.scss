@@ -16,21 +16,34 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 24px;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
     font-size: 26px;
     line-height: 1.19;
   }
+
+  &--secondary {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &__studio {
+    color: var(--logo-header-color);
+  }
+
+  &__studio-footer {
+    color: var(--primary-background-color);
+  }
 }
 
-.logo--secondary {
-  padding-top: 0;
-  padding-bottom: 0;
-}
+// .logo--secondary {
+//   padding-top: 0;
+//   padding-bottom: 0;
+// }
 
-.logo__studio {
-  color: var(--logo-header-color);
-}
+// .logo__studio {
+//   color: var(--logo-header-color);
+// }
 
-.logo__studio-footer {
-  color: var(--primary-background-color);
-}
+// .logo__studio-footer {
+//   color: var(--primary-background-color);
+// }

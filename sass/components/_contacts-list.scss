@@ -12,32 +12,124 @@
     flex-direction: row;
     align-items: center;
   }
-}
 
-.contacts-list__item {
-  @media screen and (min-width: 1200px) {
-    margin-left: 30px;
+  &__item {
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    margin-bottom: 10px;
     &:first-child {
       margin-left: 0;
     }
   }
-  margin-bottom: 10px;
-  &:first-child {
-    margin-left: 0;
+
+  &__link {
+    display: flex;
+    color: var(--primary-text-color);
+    font-size: 12px;
+    line-height: 1.17;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+  }
+
+  &__icons {
+    display: inline-block;
+    margin-right: 8px;
+    fill: currentColor;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+    }
+
+    &--mail {
+      width: 14px;
+      height: 10px;
+
+      @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+      }
+    }
+
+    &--phone {
+      width: 10px;
+      height: 14px;
+
+      @media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+      }
+    }
   }
 }
 
-.contacts-list__link {
-  display: flex;
-  color: var(--primary-text-color);
-}
+// .contacts-list__item {
+//   @media screen and (min-width: 1200px) {
+//     margin-left: 30px;
+//     &:first-child {
+//       margin-left: 0;
+//     }
+//   }
+//   margin-bottom: 10px;
+//   &:first-child {
+//     margin-left: 0;
+//   }
+// }
 
-.contacts-list__icons {
-  display: inline-block;
-  margin-right: 8px;
-  fill: currentColor;
+// .contacts-list__link {
+//   display: flex;
+//   color: var(--primary-text-color);
+//   font-size: 12px;
+//   line-height: 1.17;
 
-  @media screen and (min-width: 1200px) {
-    margin-right: 10px;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     font-size: 14px;
+//     line-height: 1.2;
+//   }
+// }
+
+// .contacts-list__icons {
+//   display: inline-block;
+//   margin-right: 8px;
+//   fill: currentColor;
+
+//   @media screen and (min-width: 1200px) {
+//     margin-right: 10px;
+//   }
+// }
+
+// .contacts-list__icons--mail {
+//   width: 14px;
+//   height: 10px;
+
+//   @media screen and (min-width: 1200px) {
+//     width: 16px;
+//     height: 12px;
+//   }
+// }
+
+// .contacts-list__icons--phone {
+//   width: 10px;
+//   height: 14px;
+
+//   @media screen and (min-width: 1200px) {
+//     width: 10px;
+//     height: 16px;
+//   }
+// }

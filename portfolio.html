@@ -17,20 +17,20 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container page-header__main-nav">
-        <nav class="page-header__nav">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo__studio">Studio</span>
-          </a>
-          <ul class="site-nav list">
+        <a href="./index.html" class="logo"
+          >Web<span class="logo__studio">Studio</span>
+        </a>
+        <nav class="page-header__nav site-nav">
+          <ul class="site-nav__list list">
             <li class="site-nav__item">
               <a href="index.html" class="site-nav__link link">Студія</a>
             </li>
             <li class="site-nav__item">
               <a
                 href="portfolio.html"
-                class="site-nav__link site-nav__link--current link"
+                class="site-nav__link site-nav__link-current link"
                 >Портфоліо</a
               >
             </li>
@@ -46,7 +46,11 @@
               class="link contacts-list__link"
             >
               <span>
-                <svg class="contacts-list__icons" width="16" height="12">
+                <svg
+                  class="contacts-list__icons contacts-list__icons--mail"
+                  width="16"
+                  height="12"
+                >
                   <use href="./images/sprite.svg#icon-envelope"></use>
                 </svg>
               </span>
@@ -56,7 +60,11 @@
           <li class="contacts-list__item">
             <a href="tel:+380961111111" class="link contacts-list__link">
               <span>
-                <svg class="contacts-list__icons" width="10" height="16">
+                <svg
+                  class="contacts-list__icons contacts-list__icons--phone"
+                  width="10"
+                  height="16"
+                >
                   <use href="./images/sprite.svg#icon-smartphone"></use>
                 </svg>
               </span>
@@ -65,14 +73,18 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="section">
         <div class="container portfolio">
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="filters-list list">
             <li class="filters-list__item">
-              <button type="button" autofocus class="filters-list__filter">
+              <button
+                type="button"
+                autofocus
+                class="filters-list__filter filters-list__filter-current"
+              >
                 Всі
               </button>
             </li>
