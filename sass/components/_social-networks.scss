@@ -3,12 +3,17 @@
 }
 
 .social-networks__link {
+  // width: calc((100% - 3 * 10px) / 4);
   margin-right: 10px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
 }
 
-.social-networks__link:nth-child(4n) {
-  margin-right: 0;
-}
+// .social-networks__link:nth-child(4n) {
+//   margin-right: 0;
+// }
 
 .social-networks__link-background:hover,
 .social-networks__link-background:focus {

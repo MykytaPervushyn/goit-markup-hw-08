@@ -5,6 +5,12 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -54,3 +60,7 @@ textarea {
 
   list-style: none;
 }
+
+// * {
+//   outline: 1px solid orangered;
+// }

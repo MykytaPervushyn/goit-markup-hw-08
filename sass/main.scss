@@ -1,11 +1,12 @@
 @import './utils/variables';
 
-@import './base/common.scss';
-@import './base/container.scss';
+@import './base/common';
+@import './base/container';
 
 @import './components/logo';
 @import './components/page-header';
 @import './components/site-nav';
+@import './components/mobile-menu';
 @import './components/contacts-list';
 @import './components/hero';
 @import './components/button';
