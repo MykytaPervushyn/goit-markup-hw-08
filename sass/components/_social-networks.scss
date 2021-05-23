@@ -11,15 +11,13 @@
   }
 
   &__menu-item {
-    margin-right: 20px;
-  }
+    &:not(:last-child) {
+      padding-right: 10px;
+      border-right: 1px solid var(--border-color);
+    }
 
-  &__link {
-    // width: calc((100% - 3 * 10px) / 4);
-    margin-right: 10px;
-
-    &:nth-child(4n) {
-      margin-right: 0;
+    &:not(:first-child) {
+      margin-left: 10px;
     }
   }
 
@@ -120,3 +118,4 @@
 //   height: 20px;
 //   fill: currentColor;
 // }
+//

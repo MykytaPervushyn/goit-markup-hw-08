@@ -10,7 +10,8 @@
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    align-items: center;
+    align-items: end;
+    padding-top: 14px;
   }
 
   &__item {
