@@ -17,7 +17,7 @@ body {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -317,7 +317,7 @@ textarea {
     display: flex;
     margin-left: auto;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
   }
 }
 
@@ -405,17 +405,46 @@ textarea {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
-  min-height: 400px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
   background-color: #c4c4c4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
+}
+
+@media screen and (max-width: 479px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
-    min-height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero@2x.jpg);
   }
 }
 
@@ -423,8 +452,6 @@ textarea {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
-    min-height: 600px;
   }
 }
 
@@ -440,6 +467,12 @@ textarea {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-background-color);
+}
+
+@media screen and (max-width: 379px) {
+  .hero__text {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -482,6 +515,10 @@ textarea {
 
 .social-networks {
   display: flex;
+}
+
+.social-networks__link {
+  margin-right: 10px;
 }
 
 .social-networks__link-menu {
@@ -663,10 +700,6 @@ textarea {
   position: relative;
 }
 
-.work__image {
-  display: block;
-}
-
 .work__description {
   position: absolute;
   display: flex;
@@ -778,7 +811,6 @@ textarea {
   align-items: center;
   background-color: var(--primary-background-color);
   fill: var(--icons-color);
-  min-width: 170px;
   height: 92px;
   border: 1px solid var(--icons-color);
   border-radius: 4px;
@@ -1142,10 +1174,6 @@ textarea {
   width: 322px;
   height: 168px;
   color: #ffffff;
-}
-
-.project-card__img {
-  display: block;
 }
 
 .backdrop {

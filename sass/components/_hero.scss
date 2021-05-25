@@ -3,27 +3,73 @@
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
-  min-height: 400px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/img.jpg);
+  // max-width: 480px;
+  // min-height: 400px;
+
   background-color: #c4c4c4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   text-align: center;
 
+  @media screen and (max-width: 479px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-mobile.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-mobile@2x.jpg);
+    }
+  }
+
+  // @media screen and (min-width: 480px) {
+  //   background-image: url(../images/hero-tablet.jpg);
+  // }
+
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-tablet.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-tablet@2x.jpg);
+    }
+  }
+
   @media screen and (min-width: 768px) {
-    max-width: 768px;
-    min-height: 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero@2x.jpg);
+    }
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
-    min-height: 600px;
+    // max-width: 1600px;
+    // min-height: 600px;
   }
 
   &__text {
@@ -38,6 +84,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-background-color);
+
+    @media screen and (max-width: 379px) {
+      width: 100%;
+    }
 
     @media screen and (min-width: 1200px) {
       width: 696px;

@@ -1,6 +1,10 @@
 .social-networks {
   display: flex;
 
+  &__link {
+    margin-right: 10px;
+  }
+
   &__link-menu {
     font-weight: 500;
     font-size: 18px;
