@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body data-menu-page>
     <header class="page-header">
       <div class="container page-header__main-nav">
         <a href="./index.html" class="logo"
@@ -43,7 +43,7 @@
           <li class="contacts-list__item">
             <a
               href="mailto:info@devstudio.com"
-              class="link contacts-list__link"
+              class="link contacts-list__link contacts-list__link-mail"
             >
               <span>
                 <svg
@@ -58,7 +58,10 @@
             </a>
           </li>
           <li class="contacts-list__item">
-            <a href="tel:+380961111111" class="link contacts-list__link">
+            <a
+              href="tel:+380961111111"
+              class="link contacts-list__link contacts-list__link-tel"
+            >
               <span>
                 <svg
                   class="contacts-list__icons contacts-list__icons--phone"
@@ -98,7 +101,7 @@
         <li class="mobile-menu__item">
           <a
             href="index.html"
-            class="mobile-menu__link mobile-menu__link--current link"
+            class="mobile-menu__link mobile-menu__link-current link"
             >Студія</a
           >
         </li>
