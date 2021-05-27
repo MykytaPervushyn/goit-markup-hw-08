@@ -47,7 +47,8 @@
     }
 
     @media screen and (min-width: 1200px) {
-      display: inline-block;
+      display: flex;
+      align-items: baseline;
       padding-top: 32px;
       padding-bottom: 28px;
       font-size: 14px;
@@ -57,13 +58,13 @@
 
   &__link-mail {
     @media screen and (max-width: 1199px) {
-      padding-top: 21px;
+      margin-top: 21px;
     }
   }
 
   &__link-tel {
     @media screen and (max-width: 1199px) {
-      padding-bottom: 21px;
+      margin-bottom: 21px;
     }
   }
 

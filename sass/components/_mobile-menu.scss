@@ -85,6 +85,10 @@
       line-height: 1.2;
     }
   }
+
+  &__social-networks {
+    flex-wrap: wrap;
+  }
 }
 
 .menu-is-open {
