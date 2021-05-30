@@ -68,6 +68,12 @@
       border: 1px solid var(--logo-header-color);
       border-radius: 2px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      @media screen and (max-width: 429px) {
+        min-width: 12px;
+        height: 12px;
+        margin-right: 4px;
+      }
     }
 
     @media screen and (min-width: 1200px) {
@@ -75,6 +81,13 @@
 
       font-size: 14px;
       line-height: 1.71;
+      letter-spacing: 0.03em;
+    }
+
+    @media screen and (max-width: 429px) {
+      font-size: 10px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
     }
   }
 
@@ -82,6 +95,21 @@
     color: var(--accent-color);
     text-decoration: underline;
     margin-left: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+    }
+
+    @media screen and (max-width: 429px) {
+      font-size: 10px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+    }
   }
 
   &__checkbox:checked + .modal-form__label-check::before {
